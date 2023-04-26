@@ -13,7 +13,35 @@
 		FC2415CC29F7138C001CDB76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2415CA29F7138C001CDB76 /* Main.storyboard */; };
 		FC2415CE29F71391001CDB76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2415CD29F71391001CDB76 /* Assets.xcassets */; };
 		FC2415D129F71391001CDB76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2415CF29F71391001CDB76 /* LaunchScreen.storyboard */; };
+		FC2415D929F713FA001CDB76 /* currentDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2415D829F713FA001CDB76 /* currentDistance.swift */; };
+		FC468E7F29FB249C0058C7C7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC468E7E29FB249C0058C7C7 /* WebKit.framework */; };
+		FC9012DE29F9DDF1005FC782 /* LocationPushService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9012DD29F9DDF1005FC782 /* LocationPushService.swift */; };
+		FC9012E229F9DDF1005FC782 /* GPS.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FC9012DB29F9DDF1005FC782 /* GPS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC9012E029F9DDF1005FC782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC2415B929F7138C001CDB76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC9012DA29F9DDF1005FC782;
+			remoteInfo = GPS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC9012E329F9DDF1005FC782 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC9012E229F9DDF1005FC782 /* GPS.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FC2415C129F7138C001CDB76 /* LocationFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +52,23 @@
 		FC2415CD29F71391001CDB76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC2415D029F71391001CDB76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC2415D229F71391001CDB76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2415D829F713FA001CDB76 /* currentDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentDistance.swift; sourceTree = "<group>"; };
+		FC468E7E29FB249C0058C7C7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		FC9012DB29F9DDF1005FC782 /* GPS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GPS.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC9012DD29F9DDF1005FC782 /* LocationPushService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPushService.swift; sourceTree = "<group>"; };
+		FC9012DF29F9DDF1005FC782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FC2415BE29F7138C001CDB76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC468E7F29FB249C0058C7C7 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC9012D829F9DDF1005FC782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				FC2415C329F7138C001CDB76 /* LocationFinder */,
+				FC9012DC29F9DDF1005FC782 /* GPS */,
 				FC2415C229F7138C001CDB76 /* Products */,
+				FC468E7D29FB249C0058C7C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				FC2415C129F7138C001CDB76 /* LocationFinder.app */,
+				FC9012DB29F9DDF1005FC782 /* GPS.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,11 +104,29 @@
 				FC2415C629F7138C001CDB76 /* SceneDelegate.swift */,
 				FC2415C829F7138C001CDB76 /* ViewController.swift */,
 				FC2415CA29F7138C001CDB76 /* Main.storyboard */,
+				FC2415D829F713FA001CDB76 /* currentDistance.swift */,
 				FC2415CD29F71391001CDB76 /* Assets.xcassets */,
 				FC2415CF29F71391001CDB76 /* LaunchScreen.storyboard */,
 				FC2415D229F71391001CDB76 /* Info.plist */,
 			);
 			path = LocationFinder;
+			sourceTree = "<group>";
+		};
+		FC468E7D29FB249C0058C7C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC468E7E29FB249C0058C7C7 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC9012DC29F9DDF1005FC782 /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				FC9012DD29F9DDF1005FC782 /* LocationPushService.swift */,
+				FC9012DF29F9DDF1005FC782 /* Info.plist */,
+			);
+			path = GPS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +139,34 @@
 				FC2415BD29F7138C001CDB76 /* Sources */,
 				FC2415BE29F7138C001CDB76 /* Frameworks */,
 				FC2415BF29F7138C001CDB76 /* Resources */,
+				FC9012E329F9DDF1005FC782 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FC9012E129F9DDF1005FC782 /* PBXTargetDependency */,
 			);
 			name = LocationFinder;
 			productName = LocationFinder;
 			productReference = FC2415C129F7138C001CDB76 /* LocationFinder.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FC9012DA29F9DDF1005FC782 /* GPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC9012E629F9DDF1005FC782 /* Build configuration list for PBXNativeTarget "GPS" */;
+			buildPhases = (
+				FC9012D729F9DDF1005FC782 /* Sources */,
+				FC9012D829F9DDF1005FC782 /* Frameworks */,
+				FC9012D929F9DDF1005FC782 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPS;
+			productName = GPS;
+			productReference = FC9012DB29F9DDF1005FC782 /* GPS.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +179,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					FC2415C029F7138C001CDB76 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					FC9012DA29F9DDF1005FC782 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -116,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				FC2415C029F7138C001CDB76 /* LocationFinder */,
+				FC9012DA29F9DDF1005FC782 /* GPS */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +216,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC9012D929F9DDF1005FC782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,11 +232,28 @@
 			files = (
 				FC2415C929F7138C001CDB76 /* ViewController.swift in Sources */,
 				FC2415C529F7138C001CDB76 /* AppDelegate.swift in Sources */,
+				FC2415D929F713FA001CDB76 /* currentDistance.swift in Sources */,
 				FC2415C729F7138C001CDB76 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC9012D729F9DDF1005FC782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC9012DE29F9DDF1005FC782 /* LocationPushService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC9012E129F9DDF1005FC782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC9012DA29F9DDF1005FC782 /* GPS */;
+			targetProxy = FC9012E029F9DDF1005FC782 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FC2415CA29F7138C001CDB76 /* Main.storyboard */ = {
@@ -283,6 +392,7 @@
 		FC2415D629F71391001CDB76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +421,7 @@
 		FC2415D729F71391001CDB76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +447,56 @@
 			};
 			name = Release;
 		};
+		FC9012E429F9DDF1005FC782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5KJQZ5KU4L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GPS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GPS;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SCS141.LocationFinder.GPS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC9012E529F9DDF1005FC782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5KJQZ5KU4L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GPS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GPS;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SCS141.LocationFinder.GPS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +514,15 @@
 			buildConfigurations = (
 				FC2415D629F71391001CDB76 /* Debug */,
 				FC2415D729F71391001CDB76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC9012E629F9DDF1005FC782 /* Build configuration list for PBXNativeTarget "GPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC9012E429F9DDF1005FC782 /* Debug */,
+				FC9012E529F9DDF1005FC782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
