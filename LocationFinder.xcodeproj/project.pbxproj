@@ -15,6 +15,8 @@
 		FC2415D129F71391001CDB76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2415CF29F71391001CDB76 /* LaunchScreen.storyboard */; };
 		FC2415D929F713FA001CDB76 /* currentDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2415D829F713FA001CDB76 /* currentDistance.swift */; };
 		FC468E7F29FB249C0058C7C7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC468E7E29FB249C0058C7C7 /* WebKit.framework */; };
+		FC468EA529FDF3F60058C7C7 /* VotingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC468EA429FDF3F60058C7C7 /* VotingViewController.swift */; };
+		FC468EA729FDF47E0058C7C7 /* TBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC468EA629FDF47E0058C7C7 /* TBViewController.swift */; };
 		FC9012DE29F9DDF1005FC782 /* LocationPushService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9012DD29F9DDF1005FC782 /* LocationPushService.swift */; };
 		FC9012E229F9DDF1005FC782 /* GPS.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FC9012DB29F9DDF1005FC782 /* GPS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -54,6 +56,8 @@
 		FC2415D229F71391001CDB76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC2415D829F713FA001CDB76 /* currentDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentDistance.swift; sourceTree = "<group>"; };
 		FC468E7E29FB249C0058C7C7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		FC468EA429FDF3F60058C7C7 /* VotingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingViewController.swift; sourceTree = "<group>"; };
+		FC468EA629FDF47E0058C7C7 /* TBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBViewController.swift; sourceTree = "<group>"; };
 		FC9012DB29F9DDF1005FC782 /* GPS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GPS.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9012DD29F9DDF1005FC782 /* LocationPushService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPushService.swift; sourceTree = "<group>"; };
 		FC9012DF29F9DDF1005FC782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				FC2415C629F7138C001CDB76 /* SceneDelegate.swift */,
 				FC2415C829F7138C001CDB76 /* ViewController.swift */,
 				FC2415CA29F7138C001CDB76 /* Main.storyboard */,
+				FC468EA429FDF3F60058C7C7 /* VotingViewController.swift */,
+				FC468EA629FDF47E0058C7C7 /* TBViewController.swift */,
 				FC2415D829F713FA001CDB76 /* currentDistance.swift */,
 				FC2415CD29F71391001CDB76 /* Assets.xcassets */,
 				FC2415CF29F71391001CDB76 /* LaunchScreen.storyboard */,
@@ -230,10 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC468EA729FDF47E0058C7C7 /* TBViewController.swift in Sources */,
 				FC2415C929F7138C001CDB76 /* ViewController.swift in Sources */,
 				FC2415C529F7138C001CDB76 /* AppDelegate.swift in Sources */,
 				FC2415D929F713FA001CDB76 /* currentDistance.swift in Sources */,
 				FC2415C729F7138C001CDB76 /* SceneDelegate.swift in Sources */,
+				FC468EA529FDF3F60058C7C7 /* VotingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

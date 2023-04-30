@@ -7,12 +7,48 @@
 
 import UIKit
 import CoreLocation
+import WebKit //project navigator / build phases
 
 class ViewController: UIViewController,
 CLLocationManagerDelegate {
 
+    @IBOutlet var yesVoteCounter: UILabel!
+    
+    @IBOutlet var noVoteCounter: UILabel!
+    
+    
+    @IBOutlet var winner: UILabel!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        yesVoteCounter.text = String((parent as! TBViewController).yesVote)
+        noVoteCounter.text = String((parent as! TBViewController).noVote)
+        
+        if (parent as! TBViewController).yesVote > (parent as! TBViewController).noVote
+        {
+            winner.text = "Yes, I think I will!"
+        } else {
+            winner.text = "No, I will not."
+        }
+        
+    }
+    
+    
+    
+    
+    
     @IBOutlet var distanceLabel: UILabel!
     
+    
+    @IBOutlet var webView: WKWebView!
+    
+    
+    
+    
+    @IBAction func openSite(_ sender: Any) {
+        if let url = URL(string: "https://campyolijwa.org/") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
     
     
     let locMan: CLLocationManager = CLLocationManager()
@@ -73,8 +109,9 @@ CLLocationManagerDelegate {
         locMan.startUpdatingLocation()
         startLocation = nil
         
-        
-        
+        let myURL = URL(string: "https://campyolijwa.org/")
+        let myRequest = URLRequest (url: myURL!)
+        webView.load(myRequest)
         
         
     }
